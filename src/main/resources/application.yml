@@ -1,17 +1,19 @@
 # application.yml
+server:
+  port: 8080
 app:
   kafka:
     cluster1:
-      bootstrap-servers: 10.165.34.249:9092
+      bootstrap-servers: 127.0.0.1:9092
       group-id: group1
       security:
-        enabled: true
+        enabled: false
         protocol: SASL_PLAINTEXT
         mechanism: PLAIN
         username: kafkauser
         password: Kedacom#321
     cluster2:
-      bootstrap-servers: 172.16.249.153:9092
+      bootstrap-servers: 127.0.0.1:19092
       group-id: group2
       security:
         enabled: true

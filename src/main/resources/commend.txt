@@ -1,0 +1,4 @@
+实例2
+docker-compose -f docker-compose2.yml -p kafka-sasl up -d
+实例1
+docker-compose -f docker-compose.yml -p kafka-no-sasl up -d
